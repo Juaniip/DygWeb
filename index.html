@@ -91,37 +91,33 @@
         </ul>
         <h1>EJ9</h1>
         <H1>Resultado de la busqueda</H1>
-        <table>
-          <tbody>
-            Resultado de Busqueda
-          </tbody>
-        </table>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Imagen</th>
-              <th>Datos</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th><img src="/imagenes/notebook.jpg" style="max-width: 10rem"></th>
-              <th>
-                <a href="">Portatil - 3 Ghz - 4 GB RAM</a><br>
-                <a href="">Comprar</a>
-                <p><del>2.999$</del> 2.599$</p>
-              </th>
-            </tr>
-            <tr>
-              <th><img src="/imagenes/camara.jpg" style="max-width: 10rem;"></th>
-              <th>
-                <a href="">VideoCamara - Alta definicion 1080p - 60GB</a><br>
-                <a href="">Comprar</a>
-                <p><del>1.099$</del> 999$</p>
-              </th>
-            </tr>
-          </tbody>
-        </table>
+        <div>
+          <p style="text-align: center;">Resultados de busqueda</p>
+          <table border="1" align="center">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Datos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th><img src="/imagenes/notebook.jpg" style="max-width: 10rem"></th>
+                <th>
+                  <a href="">Portatil - 3 Ghz - 4 GB RAM</a><br>
+                  <a href="">Comprar</a><del> 2.999$</del> 2.599$
+                </th>
+              </tr>
+              <tr>
+                <th><img src="/imagenes/camara.jpg" style="max-width: 10rem;"></th>
+                <th>
+                  <a href="">VideoCamara - Alta definicion 1080p - 60GB</a><br>
+                  <a href="">Comprar</a><del> 1.099$</del> 999$
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <h1>EJ10</h1>
         <form action="">
           <label for="nombre">Nombre</label><br>
@@ -141,11 +137,30 @@
           <input type="submit" value="Guardar Cambios"> <input type="reset" value="Borrar los datos introducidos">
         </form>
         <H2>Rellena tu CV</H2>
-        <div style="border-color: black;">
-          <form>
-            <label></label><br>
-            <input type="range"><br>
-          </form>
-        </div>
+        <fieldset>
+          <legend><strong>Datos Personales</strong></legend><br>
+          <label for="provincia">Provincia</label>
+          <select name="provincia" name="provincia">
+            <option value="">- selecciona -</option>
+            <option value="caba">Caba</option><br>
+          </select><br><br>
+          <label for="fechaNa">Fecha de Nacimiento</label><br>
+          <label><input type="int" size="1"> de <select name="mes">
+            <option value="">- selecciona -</option>
+            <option value="enero">Enero</option>
+            <option value="febrero">Febrero</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agosto">Agosto</option>
+            <option value="septiembre">Septiembre</option>
+            <option value="octubre">Octubre</option>
+            <option value="noviembre">Noviembre</option>
+            <option value="diciembre">Diciembre</option>
+          </select> de <input type="int" size="1">
+        </fieldset>
+
     </body>
 </html>
