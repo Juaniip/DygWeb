@@ -1,0 +1,50 @@
+* {
+    font: 0.9em/1.4 Arial;
+    color: black ;
+}
+
+.articulo h2 {
+    color: #CC6600;
+    font: 6em/1.2;
+    margin-bottom: 0.3em;
+}
+
+#menu /*no hay html , no hay items xd*/ {
+    margin-right: 1em;
+
+}
+
+#menu a {
+    color: white;
+    font: 1.3em;
+}
+
+#lateral {
+    font: 0.9em ;
+    color:  grey;
+    display: inline;
+}
+
+#noticias h3 {
+    color: #003366;
+}
+
+#publicidad {
+    color: #555;
+
+}
+
+#publicidad a {
+    color: #CC6600;
+}
+
+.articulo a {
+    color: #CC6600;
+}
+
+.articulo p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+/* no hay html entonces 7 y 8 anda a saber como se hace*/
