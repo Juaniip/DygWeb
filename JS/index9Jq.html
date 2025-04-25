@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        form {
+          max-width: 400px;
+          margin: auto;
+        }
+    
+        label, input {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+    
+        input {
+          padding: 8px;
+          box-sizing: border-box;
+        }
+      </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+            <form id="formu">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <div id="errn" class="error"></div>
+                <label for="apellido1">Primer Apellido</label>
+                <input type="text" name="apellido1" id="apellido1">
+                <div id="erra" class="error"></div>
+                <label for="apellido2">Segundo Apellido</label>
+                <input type="text" name="apellido2" id="apellido2">
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail">
+                <label for="telF">Telefono Fijo</label>
+                <input type="text" name="telF" id="telF">
+                <div id="errtf" class="error"></div>
+                <label for="telM">Telefono Movil</label>
+                <input type="text" name="telM" id="telM">
+                <div id="errtm" class="error"></div>
+                <input type="submit" value="Enviar">
+            </form>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#formu").submit(function(e){
+                $(".error").text("")
+                if ($("#nombre").val().trim() == "") {
+                    const err = $("<p>Nombre Invalido</p>").css("color", "red")
+                    $("#errn").append(err);
+                    return false
+                }
+                if ($("#apellido1").val().trim() == "") {
+                    const err = $("<p>Apellido Invalido</p>").css("color", "red")
+                    $("#erra").append(err);
+                    return false
+                }
+                if (isNaN( $("#telF").val()) && $("#telF").val().trim() !== "") {
+                    const err = $("<p>Telefono Fijo incorrecto</p>").css("color", "red")
+                    $("#errtf").append(err);
+                    return false
+                }       
+                if (isNaN( $("#telM").val()) && $("#telM").val().trim() !== "") {
+                    const err = $("<p>Telefono Movil incorrecto</p>").css("color", "red")
+                    $("#errtm").append(err);
+                    return false
+                }       
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,15 +1,18 @@
 footer {
-    background-color: lightblue;
+    background-color: #ecfaff;
     text-align: right;
     padding: 1em;
 }
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: grey;
+    background-color: rgb(255, 201, 201);
     padding: 1em;
+}
+
+h2 {
+    margin: 0 auto;
 }
 
 #icono {
@@ -25,14 +28,14 @@ header {
 
 .bloque-lateral {
     width: 7em;
-    background-color: rgb(169, 251, 255);
+    background-color: rgb(217, 253, 255);
 }
 
-.bloque-general {
+#contenido {
     width: 100%;
     height: 15em;
 }
 
-footer, aside, div, header {
+footer, div, header {
     border: 1px solid;
 }
