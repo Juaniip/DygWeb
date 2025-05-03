@@ -31,9 +31,33 @@ h2 {
 
 #contenido {
     width: 100%;
-    height: 15em;
+    height: auto;
+    overflow: auto;
 }
 
 footer, div, header {
     border: 1px solid;
+}
+
+.estilo1 {
+    color: rgb(174, 0, 255);
+    font-weight: bold;
+    font-style: italic;
+    background-color: orange;
+}
+
+.estilo2 {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    font-family:'Gill Sans';
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: rgb(112, 203, 255);
+}
+
+.estilo3 {
+    color: rgb(161, 255, 84);
+    text-decoration: underline;
+    font-family: Impact;
+    background-color: rgb(70, 70, 70);
 }

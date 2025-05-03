@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    cambiarEstilo();
     $('#gato').click(function() {
         $.ajax({
             url: 'https://api.thecatapi.com/v1/images/search',
@@ -12,8 +13,9 @@ $(document).ready(function() {
                 $('#contenido').html('<p>Error al cargar la imagen de gato.</p>');
             }
         });
+        
     });
-
+    
     $('#perro').click(function() {
         $.ajax({
             url: 'https://dog.ceo/api/breeds/image/random',
@@ -29,3 +31,16 @@ $(document).ready(function() {
         });
     });
 });
+
+
+function cambiarEstilo(){
+    const numero = Math.floor(Math.random() * 3);
+    const frases = [
+        "El perro es el mejor amigo del hombre",
+        "Estoy programando en JavaScript",
+        "Hoy es un día soleado"
+    ];
+    $('#fraseAleatoria').removeClass('estilo1 estilo2 estilo3');
+    $('#fraseAleatoria').addClass('estilo' + (numero + 1));
+    $('#fraseAleatoria').text(frases[numero])
+}
