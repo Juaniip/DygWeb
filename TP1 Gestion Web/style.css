@@ -1,14 +1,17 @@
 footer {
-    background-color: #ecfaff;
+    background-color: rgb(71, 71, 71);
     text-align: right;
     padding: 1em;
 }
+
 header {
     display: flex;
     align-items: center;
     height: 70px;
-    background-color: rgb(255, 201, 201);
+    background-color: rgb(71, 71, 71);
     padding: 1em;
+    color: white;
+
 }
 
 h2 {
@@ -20,23 +23,23 @@ h2 {
     left: 1em;
 }
 
-#general {
+.main {
     display: flex;
+    flex: auto; 
 }
 
-.bloque-lateral {
+section {
+    padding: 1em;
+}
+
+aside {
     width: 7em;
-    background-color: rgb(217, 253, 255);
+    background-color: rgb(210, 210, 210);
+    padding: 1em;
 }
 
-#contenido {
-    width: 100%;
-    height: auto;
-    overflow: auto;
-}
-
-footer, div, header {
-    border: 1px solid;
+footer, aside,header , div {
+    border: 1px solid black;
 }
 
 .estilo1 {
@@ -60,4 +63,14 @@ footer, div, header {
     text-decoration: underline;
     font-family: Impact;
     background-color: rgb(70, 70, 70);
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    box-shadow:  0 5px #818181;
+    margin-bottom: 10px;
+    background-color: rgb(234, 234, 234);
 }
